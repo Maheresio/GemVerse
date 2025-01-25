@@ -19,7 +19,7 @@ Future<void> main() async {
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
             theme: ThemeData.light().copyWith(
-              textTheme: GoogleFonts.dmSansTextTheme(),
+              textTheme: GoogleFonts.nunitoTextTheme(),
             ),
             home: SplashView(),
           ),

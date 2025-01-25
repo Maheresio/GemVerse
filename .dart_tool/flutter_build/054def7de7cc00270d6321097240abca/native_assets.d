@@ -1,0 +1,1 @@
+ /media/maheresio/New\ Volume/Dev/gemverse/.dart_tool/flutter_build/054def7de7cc00270d6321097240abca/native_assets.yaml: 
