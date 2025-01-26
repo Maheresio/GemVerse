@@ -6,15 +6,15 @@ import '../../../../core/utils/app_colors.dart';
 class ListViewItem extends StatelessWidget {
   const ListViewItem({
     super.key,
+    required this.isMe,
   });
-
+  final bool isMe;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsetsDirectional.only(
-        start: 94.w,
-        end: 29.w,
-        top: 20.h,
+        start: isMe ? 94.w : 29.w,
+        end: isMe ? 29.w : 94.w,
       ),
       child: Container(
         width: double.infinity,
@@ -23,11 +23,12 @@ class ListViewItem extends StatelessWidget {
         ),
         decoration: BoxDecoration(
           borderRadius: BorderRadiusDirectional.only(
-            bottomStart: Radius.circular(40.r),
+            bottomStart: isMe ? Radius.circular(40.r) : Radius.zero,
             topStart: Radius.circular(40.r),
             bottomEnd: Radius.circular(40.r),
+            topEnd: isMe ? Radius.zero : Radius.circular(40.r),
           ),
-          color: AppColors.blue,
+          color: isMe? AppColors.blue : AppColors.lightGrey
         ),
         child: Padding(
           padding: EdgeInsets.symmetric(
@@ -41,7 +42,7 @@ class ListViewItem extends StatelessWidget {
               Text(
                 'Hello chatGPT, how are you today?',
                 style: TextStyle(
-                  color: Colors.white,
+                  color:isMe?  Colors.white: AppColors.black,
                   fontSize: 15.sp,
                   fontWeight: FontWeight.w600,
                 ),

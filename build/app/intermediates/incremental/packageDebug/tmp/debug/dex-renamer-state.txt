@@ -1,4 +1,4 @@
-#Sun Jan 26 08:25:44 EET 2025
+#Sun Jan 26 14:29:10 EET 2025
 base.0=/media/maheresio/New Volume/Dev/gemverse/build/app/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/media/maheresio/New Volume/Dev/gemverse/build/app/intermediates/dex/debug/mergeLibDexDebug/0/classes.dex
 base.2=/media/maheresio/New Volume/Dev/gemverse/build/app/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex

@@ -11,7 +11,7 @@ abstract class AppColors {
  
   static const Color black = Color(0xff292D32);
 
-  static const Color lightGrey = Color(0xffCACACA);
+  static const Color lightGrey = Color.fromARGB(255, 238, 235, 235);
 
   static const Color lightWhite = Color(0xffF4F4F4);
 

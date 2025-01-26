@@ -9,6 +9,7 @@ class ChatView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: chatAppBar(),
       body: ChatViewBody(),
     );

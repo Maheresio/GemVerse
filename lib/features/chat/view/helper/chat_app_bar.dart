@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gemverse/core/utils/app_colors.dart';
 
 import '../widgets/app_bar_title.dart';
@@ -7,6 +8,9 @@ import '../widgets/volume_icon_button.dart';
 
 AppBar chatAppBar() {
   return AppBar(
+  
+   forceMaterialTransparency: true,
+   toolbarHeight: 70.h,
     leading: BackButtonIcon(),
     title: AppBarTitle(),
     actions: [

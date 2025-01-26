@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:gemverse/core/utils/app_colors.dart';
 
+
+import 'chat_text_field.dart';
 import 'list_view_item.dart';
 
 class ChatViewBody extends StatelessWidget {
@@ -20,7 +20,15 @@ class LIstViewItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListViewItem();
+    return Stack(
+      children: [
+        ListView.builder(itemBuilder: (context, index) {
+          return ListViewItem(
+            isMe: false,
+          );
+        }),
+        ChatTextField(),
+      ],
+    );
   }
 }
-
