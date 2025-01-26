@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:gemverse/core/utils/app_images.dart';
-import 'package:gemverse/core/utils/app_router.dart';
 import 'package:go_router/go_router.dart';
+
+import '../../core/utils/app_images.dart';
+import '../../core/utils/app_router.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gemverse/features/boarding/boarding_view.dart';
-import 'package:gemverse/features/splash/splash_view.dart';
+import '../../features/boarding/boarding_view.dart';
+import '../../features/splash/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
 abstract class AppRouter {

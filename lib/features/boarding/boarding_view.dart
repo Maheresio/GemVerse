@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gemverse/features/boarding/boarding_view_body.dart';
+
+import 'view/boarding_view_body.dart';
 
 class BoardingView extends StatelessWidget {
   const BoardingView({super.key});
