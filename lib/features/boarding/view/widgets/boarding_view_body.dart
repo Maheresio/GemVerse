@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gemverse/core/utils/app_router.dart';
+import 'package:go_router/go_router.dart';
 
 import 'boarding_image_section.dart';
 import 'continue_button_widget.dart';
@@ -15,7 +17,9 @@ class BoardingViewBody extends StatelessWidget {
       children: [
         TopBannerSection(),
         BoardingImageSection(),
-        ContinuationButtonWidget(),
+        ContinuationButtonWidget(
+          onPressed: ()=>GoRouter.of(context).push(AppRouter.kChatView),
+        ),
       ],
     );
   }
