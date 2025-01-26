@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:gemverse/core/utils/app_colors.dart';
 import 'package:gemverse/features/splash/splash_view.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -20,6 +21,7 @@ Future<void> main() async {
             debugShowCheckedModeBanner: false,
             theme: ThemeData.light().copyWith(
               textTheme: GoogleFonts.nunitoTextTheme(),
+              primaryColor: AppColors.blue,
             ),
             home: SplashView(),
           ),
