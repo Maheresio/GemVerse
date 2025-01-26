@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:gemverse/features/chat/view/chat_view.dart';
 import 'core/utils/app_colors.dart';
-import 'core/utils/app_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 Future<void> main() async {
@@ -17,13 +17,13 @@ Future<void> main() async {
         return GestureDetector(
           behavior: HitTestBehavior.opaque,
           onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
-          child: MaterialApp.router(
+          child: MaterialApp(
             debugShowCheckedModeBanner: false,
             theme: ThemeData.light().copyWith(
               textTheme: GoogleFonts.nunitoTextTheme(),
               primaryColor: AppColors.blue,
             ),
-            routerConfig: AppRouter.router,
+            home: ChatView(),
           ),
         );
       },
