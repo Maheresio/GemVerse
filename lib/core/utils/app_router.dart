@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../features/boarding/boarding_view.dart';
+import '../../features/boarding/view/boarding_view.dart';
 import '../../features/splash/splash_view.dart';
 import 'package:go_router/go_router.dart';
 

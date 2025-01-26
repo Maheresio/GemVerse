@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/utils/app_images.dart';
+import '../../../../core/utils/app_images.dart';
 
 class BoardingImageSection extends StatelessWidget {
   const BoardingImageSection({
