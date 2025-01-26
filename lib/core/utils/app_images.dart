@@ -15,8 +15,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/arrow_icon.svg
   String get arrowIcon => 'assets/images/arrow_icon.svg';
 
-  /// File path: assets/images/boarding.svg
-  String get boarding => 'assets/images/boarding.svg';
+  /// File path: assets/images/boarding.png
+  AssetGenImage get boarding =>
+      const AssetGenImage('assets/images/boarding.png');
 
   /// File path: assets/images/edit_icon.svg
   String get editIcon => 'assets/images/edit_icon.svg';
@@ -30,8 +31,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/microphone_icon.svg
   String get microphoneIcon => 'assets/images/microphone_icon.svg';
 
-  /// File path: assets/images/robot_icon.svg
-  String get robotIcon => 'assets/images/robot_icon.svg';
+  /// File path: assets/images/robot_icon.png
+  AssetGenImage get robotIcon =>
+      const AssetGenImage('assets/images/robot_icon.png');
 
   /// File path: assets/images/send_icon.svg
   String get sendIcon => 'assets/images/send_icon.svg';
