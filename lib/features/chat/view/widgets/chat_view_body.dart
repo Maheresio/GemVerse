@@ -9,17 +9,6 @@ class ChatViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return LIstViewItem();
-  }
-}
-
-class LIstViewItem extends StatelessWidget {
-  const LIstViewItem({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
     return Stack(
       children: [
         ListView.builder(itemBuilder: (context, index) {
@@ -32,3 +21,5 @@ class LIstViewItem extends StatelessWidget {
     );
   }
 }
+
+
