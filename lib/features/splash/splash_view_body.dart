@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gemverse/core/utils/app_images.dart';
+import 'package:gemverse/core/utils/app_router.dart';
+import 'package:go_router/go_router.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -10,14 +12,29 @@ class SplashViewBody extends StatefulWidget {
 
 class _SplashViewBodyState extends State<SplashViewBody> {
   double _opacity = 0.0;
+
   @override
   void initState() {
     super.initState();
+    _startFadeInAnimation();
+    _navigateToHome();
+  }
 
+  void _startFadeInAnimation() {
     Future.delayed(const Duration(milliseconds: 500), () {
-      setState(() {
-        _opacity = 1.0;
-      });
+      if (mounted) {
+        setState(() {
+          _opacity = 1.0;
+        });
+      }
+    });
+  }
+
+  void _navigateToHome() {
+    Future.delayed(const Duration(seconds: 4), () {
+      if (mounted) {
+        GoRouter.of(context).pushReplacement(AppRouter.kBoardingView);
+      }
     });
   }
 
